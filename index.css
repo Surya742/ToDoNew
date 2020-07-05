@@ -1,0 +1,117 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: hsl(0, 0%, 0%);
+	color: hsl(0, 0%, 100%);
+}
+
+h1{
+    position: absolute;
+    left: auto;
+    right: auto;
+    top: 5rem;
+}
+
+input, button, ul{
+    position: absolute;
+    left: auto;
+    right: auto;
+    top: 10rem;
+}
+
+button{
+	top: 13rem;
+	padding: 0.3em 0.9em;
+	background-color: aqua;
+	border: 0ch;
+	border-radius: 12px;
+}
+
+button:hover{
+	background-color: blue;
+	color: cornsilk;
+}
+
+input{
+	border-radius: 10px;
+	background-color: rgb(33, 211, 33);
+	padding: 4px;
+}
+
+input:hover{
+	background-color: rgb(153, 241, 153);
+}
+
+ul{
+    top: 18rem;
+}
+
+svg {
+    position: relative;
+    left: 43rem;
+    bottom: 20rem;
+	width: 10rem;
+	height: auto;
+	display: block;
+}
+
+li{
+    list-style: none;
+}
+
+.rotate {
+	animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+	100% {
+		transform: rotate(1turn);
+	}
+}
+
+
+/* li style */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+
+/* body {
+
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: #101010;
+  
+} */
+
+
+li {
+  
+    font-size: 1rem;
+    color: lightblue;
+    text-shadow: 5px 5px 30px blue;
+    font-family: 'Open Sans Condensed', sans-serif;
+    animation-name: repeat;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    font-weight: lighter;
+}
+
+@keyframes repeat {
+
+  0% {color: lightblue; text-shadow: 5px 5px 30px lightblue;}
+  20% {color: #45aaf2; text-shadow: 5px 5px 30px  #45aaf2;}
+  40% {color: #2d98da; text-shadow: 5px 5px 30px  #2d98da;}
+  60% {color: #4b7bec; text-shadow: 5px 5px 30px  #2d98da;}
+  80% {color: #3867d6; text-shadow: 5px 5px 30px  #3867d6;}
+  100% {color: lightblue; text-shadow: 5px 5px 30px  lightblue;}
+
+}
